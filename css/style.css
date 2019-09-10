@@ -819,15 +819,12 @@ label {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 4.2rem;
-  margin: 0 -1rem;
+  margin: -1rem -1.2rem;
   position: relative; }
   .logos:before {
     content: '';
@@ -837,12 +834,14 @@ label {
     right: 1rem;
     height: .1rem;
     background: #e1e1e1; }
+  .logos__item {
+    padding: 1.2rem; }
   .logos img {
     -webkit-box-flex: 0;
     -webkit-flex: none;
     -ms-flex: none;
     flex: none;
-    margin: 1rem; }
+    max-width: 100%; }
 
 .process {
   display: -webkit-box;
@@ -1475,6 +1474,22 @@ label {
     .listing-preview__list {
       padding-top: 0;
       margin-bottom: 2rem; }
+  .logos {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: -.5rem -1rem;
+    padding-top: 3rem; }
+    .logos__item {
+      width: 20%;
+      padding: .5rem 1rem; }
+      .logos__item--medium {
+        width: 33.33%; }
+      .logos__item--big {
+        width: 60%; }
+      .logos__item img {
+        display: inline-block; }
   .process {
     margin-left: -2rem;
     margin-right: -2rem; }
@@ -1687,7 +1702,10 @@ label {
     font-size: 1.4rem;
     margin-top: 1rem; }
   .ds-part {
-    margin-left: 35%; }
+    margin-left: 31%; }
+    .ds-part .btn {
+      padding-left: 1.7rem;
+      padding-right: 1.7rem; }
   .ds-part__title {
     font-size: 2.5rem; }
   .slick-dots button {
@@ -1709,4 +1727,21 @@ label {
   .promo:before {
     background-image: url(../img/promo-bg-mobile.png);
     width: 34.9rem;
-    height: 31.2rem; } }
+    height: 31.2rem; }
+  .footer {
+    background-image: url("../img/footer-bg-mobile.jpg"); }
+  .footer-menu-horizontal {
+    width: 100%; }
+    .footer-menu-horizontal li {
+      margin-right: 2rem; }
+    .footer-menu-horizontal li:nth-last-child(2) {
+      margin-right: 0; }
+      .footer-menu-horizontal li:nth-last-child(2):after {
+        display: none; }
+    .footer-menu-horizontal li:last-child {
+      display: block; }
+  .footer-menu-horizontal li:not(:last-child):after {
+    margin-left: 1.2rem;
+    top: .5rem; }
+  .footer-menu-horizontal li a, .copyright {
+    font-size: 1.2rem; } }
